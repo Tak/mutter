@@ -123,6 +123,15 @@
       </description>
     </key>
 
+    <key name="unresponsive-window-dialog" type="b">
+      <default>true</default>
+      <summary>Show a dialog for unresponsive windows</summary>
+      <description>
+        When true, windows that are unresponsive will trigger a dialog,
+        prompting the user to kill the owning application or wait.
+      </description>
+    </key>
+
     <child name="keybindings" schema="org.gnome.mutter.keybindings"/>
 
   </schema>

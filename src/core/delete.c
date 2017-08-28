@@ -62,7 +62,7 @@ meta_window_set_alive (MetaWindow *window,
     {
       meta_close_dialog_hide (window->close_dialog);
     }
-  else if (!is_alive)
+  else if (!is_alive && meta_prefs_get_unresponsive_window_dialog())
     {
       meta_window_ensure_close_dialog (window);
       meta_close_dialog_show (window->close_dialog);
